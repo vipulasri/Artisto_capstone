@@ -1,1 +1,1 @@
-# Artsy
+# Artisto
