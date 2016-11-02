@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+// Load keystore.properties
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+
+    signingConfigs {
+        release {
+            storeFile file(keystoreProperties['STORE_FILE'])
+            keyAlias keystoreProperties['KEY_ALIAS']
+            storePassword keystoreProperties['STORE_PASSWORD']
+            keyPassword keystoreProperties['KEY_PASSWORD']
+        }
+    }
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.vipulasri.artisto"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "API_KEY", "${API_KEY}"
+        vectorDrawables.useSupportLibrary = true
+
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'com.android.support:cardview-v7:25.0.0'
+    compile 'com.android.support:support-vector-drawable:25.0.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:support-annotations:25.0.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.7.5'
+    compile 'com.facebook.fresco:fresco:0.14.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.pnikosis:materialish-progress:1.7'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.sothree.slidinguppanel:library:3.3.1'
+    compile 'com.roughike:bottom-bar:2.0.2'
+    compile 'pub.devrel:easypermissions:0.2.0'
+    compile 'com.google.firebase:firebase-analytics:9.6.1'
+    compile 'com.google.firebase:firebase-ads:9.6.1'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'net.yslibrary.licenseadapter:licenseadapter:1.2.4'
+}
+
+apply plugin: 'com.google.gms.google-services'

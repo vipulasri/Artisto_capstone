@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layout_bottom_sheet"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@color/colorWhite"
+    tools:layout_gravity="bottom">
+
+    <TextView
+        android:id="@+id/artTitle"
+        style="@style/ArtItemDetailText"
+        tools:text="Title"/>
+
+    <TextView
+        android:id="@+id/artSubTitle"
+        style="@style/ArtItemDetailText"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/secondaryText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:text="SubTitle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="14dp"
+            android:id="@+id/downloadButton"
+            app:srcCompat="@drawable/download_button_selector"
+            android:background="@drawable/background_button_selector"
+            android:contentDescription="@string/art_item_btn_download_desc"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="14dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/shareButton"
+            app:srcCompat="@drawable/share_button_selector"
+            android:background="@drawable/background_button_selector"
+            android:contentDescription="@string/art_item_btn_share_desc"/>
+
+    </LinearLayout>
+
+</LinearLayout>

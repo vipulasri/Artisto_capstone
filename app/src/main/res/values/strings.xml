@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Artisto</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="no_internet">No Internet Connection</string>
+    <string name="message_empty_art_fragment">Please choose an art</string>
+
+    <string name="art_item_btn_favorite_desc">Save to favorites</string>
+    <string name="art_item_btn_download_desc">Download Art</string>
+    <string name="art_item_btn_share_desc">Share Art</string>
+
+    <string name="action_share">Share with friends</string>
+
+    <string name="no_favorite_available">No Favorite Arts Available</string>
+    <string name="added_favorite">Saved to favorites</string>
+    <string name="removed_favorite">Removed from favorites</string>
+
+    <string name="check_favorite">checkout favorite arts!</string>
+
+    <string name="content_authority">com.vipulasri.artisto</string>
+
+    <string name="connection_line_mask_hidden">M26,159 L26,159 L32,159 L32,159 Z</string>
+    <string name="connection_line_mask_shown">M26,67 L26,159 L32,159 L32,67 Z</string>
+    <string name="phone_button">M24,206.5 C24,206.5 27.6392462,206.449997 28,206.449997 C28.3607538,206.449997 32,206.5 32,206.5</string>
+    <string name="phone_button_frown">M23.6061137,207.020699 C23.6061137,207.020699 26.2397148,206 28.494994,206 C30.7502732,206 32.753258,207.020699 32.753258,207.020699</string>
+
+
+    <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+    <string name="title_settings_dialog">Permissions Required</string>
+    <string name="permission_external_storage_rationale">External Storage permission is required to save image.</string>
+    <string name="permission_external_storage_denied">External Storage permission was denied. Please consider granting it in order to access the external_storage!</string>
+    <string name="permission_external_storage_never_askagain">External Storage permission was denied with never ask again.</string>
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+
+    <string name="widget_empty_view_text">You have no favorite arts</string>
+
+    <string name="licenses">Licenses</string>
+    
+</resources>

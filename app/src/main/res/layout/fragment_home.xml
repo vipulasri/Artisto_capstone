@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".activity.arts.ArtsFragment">
+
+    <include
+        layout="@layout/layout_loading_view"
+        android:id="@+id/layout_loading_view"
+        tools:visibility="visible"/>
+
+    <include
+        layout="@layout/layout_no_connection"
+        android:id="@+id/layout_no_connection"/>
+
+    <include
+        layout="@layout/layout_no_favorite"
+        android:id="@+id/layout_no_favorite"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/recyclerView"/>
+
+</RelativeLayout>

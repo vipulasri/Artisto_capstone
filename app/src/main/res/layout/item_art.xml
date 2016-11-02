@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/artImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        app:viewAspectRatio="1.33"
+        app:actualImageScaleType="focusCrop"
+        app:placeholderImage="@drawable/ic_canvas"
+        app:placeholderImageScaleType="centerInside"
+        tools:src="@drawable/placeholder"
+        tools:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/artTextView"
+                style="@style/ArtItemTitle"
+                tools:text="Hello" />
+
+            <TextView
+                android:id="@+id/artBy"
+                style="@style/ArtItemSubText"
+                tools:text="Pablo Picasso" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/art_item_btn_favorite"
+            style="@style/FavoriteButton"
+            android:contentDescription="@string/art_item_btn_favorite_desc" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

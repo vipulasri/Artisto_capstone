@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorBackground"
+    android:baselineAligned="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.arts.HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <com.roughike.bottombar.BottomBar
+            android:id="@+id/bottomBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:bb_tabXmlResource="@xml/bottombar_tabs"
+            app:bb_tabletMode="true"
+            app:bb_inActiveTabAlpha="0.5"
+            app:bb_activeTabAlpha="1"
+            app:bb_inActiveTabColor="#222222"
+            app:bb_activeTabColor="@color/colorWhite"
+            app:bb_showShadow="true"
+            app:bb_behavior="underNavbar" />
+
+        <FrameLayout
+            android:id="@+id/homeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/bottomBar"
+            android:layout_toEndOf="@+id/bottomBar"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/homeDetailsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/message_empty_art_fragment"
+            android:textSize="18sp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1060968530063",
+    "firebase_url": "https://artisto-8ca71.firebaseio.com",
+    "project_id": "artisto-8ca71",
+    "storage_bucket": "artisto-8ca71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060968530063:android:fd14f6f3f9d56711",
+        "android_client_info": {
+          "package_name": "com.vipulasri.artisto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060968530063-d6rujbth9q40ds5pjbklhq77d4vju2h3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vipulasri.artisto",
+            "certificate_hash": "CC7597FF5488B5E834391584783960CE6AF3268C"
+          }
+        },
+        {
+          "client_id": "1060968530063-fhanlj5jo2b2ht1h23jctfpava2dgie6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmM1EtS3EBgMBjQt601QOnyEzKfykUenc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060968530063-fhanlj5jo2b2ht1h23jctfpava2dgie6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
