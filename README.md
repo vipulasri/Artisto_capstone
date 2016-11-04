@@ -1,6 +1,6 @@
 # Artisto
 
-![Logo](../master/art/ic_launcher.png =100x100)
+![Logo](../master/art/ic_launcher.png)
 
 This is a Capstone Project of Android Developer Nanodegree program. It showcases the arts and culture from different museums. 
 This app reveals the power of adaptive UI both for phone and tablet devices.
