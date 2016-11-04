@@ -12,6 +12,7 @@ With the app, you can:
 * Save favorite arts locally to view them even when offline.
 * Read description of arts.
 * Native Advanced Ads.
+* Widget to display all the favorite arts.
 
 ## How to Work with the Source
 
@@ -30,6 +31,10 @@ You must provide your own API key in order to build the app. When you get it, ju
 ![screen](../master/art/artisto-screen2.png)
 
 ![screen](../master/art/artisto-screen3.png)
+
+## Widget
+
+![screen](../master/art/artisto-widget.png)
 
 
 ## Libraries
